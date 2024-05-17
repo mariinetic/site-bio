@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Paciente</title>
+  <link rel="stylesheet" href="styles_paciente.css">
+</head>
+<body>
+  <div class="container">    
+    <section class="section">
+      <h2>Receber Prontuários</h2>
+      <p>Aqui você pode receber seus prontuários médicos.</p>
+      <ul id="lista-prontuarios">
+        <!-- Aqui serão exibidos os prontuários recebidos -->
+      </ul>
+      <button id="prontuario-btn" class="button">Receber Prontuário</button>
+      <!-- Div para exibir os dados recebidos -->
+      <div id="dados-recebidos" class="dados-recebidos" style="display: none;">
+        <h3>Dados Recebidos</h3>
+        <p>Email do Médico: <span id="email-recebido"></span></p>
+        <p>Mensagem: <span id="mens-recebida"></span></p>
+        <p>Prontuário: <span id="prontuario-recebido"></span></p>
+        <a id="download-link" href="#" style="display: none;" download>Baixar Prontuário</a>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Enviar Prontuários</h2>
+      <p>Aqui você pode enviar seus prontuários médicos.</p>
+      <form id="enviar-form">
+        <div class="input-group">
+          <label for="email-medico">Email do Médico:</label>
+          <input type="email" id="email-medico" name="email-medico" placeholder="Email do Médico" required>
+        </div>
+        <div class="input-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+        </div>
+        <div class="input-group">
+          <label for="prontuario">Prontuário:</label>
+          <input type="file" id="prontuario" name="prontuario" accept=".pdf" required>
+        </div>
+        <button type="submit" class="button">Enviar Prontuário</button>
+      </form>
+      <div id="status-message"></div> 
+    </section>
+  </div>
+  <aside class="info-section">
+    <h2>Sobre os Prontuários</h2>
+    <p>Os prontuários médicos são registros importantes da sua saúde. Eles contêm informações sobre tratamentos, exames, e outras observações médicas. Para mais informações sobre como acessar e utilizar os prontuários, <a href="https://educahrsaude.com/analises-clinicas/tubos-de-coleta-de-sangue/#:~:text=Para%20garantir%20uma%20melhor%20coleta%2C%20%C3%A9%20indicado%20que,Roxo%20%28EDTA%29%205%20Tubo%20Cinza%20%28fluoreto%20de%20s%C3%B3dio%2FEDTA%29">clique aqui</a>.</p>
+  </aside>
+
+  <script src="script_paciente.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.hospital-logo {
+  height: 190px;
+  margin-right: 10px;
+}
+
+.welcome-text {
+  font-size: 30px;
+}
+
+#logout-btn {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: auto;
+}
+
+#logout-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.content {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.patient-info {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.patient-info:hover {
+  box-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
+}
+
+.input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  position: absolute;
+  left: calc(100% - 45px);
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.input-group input,
+.input-group textarea {
+  width: calc(100% - 20px);
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #ffffff;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.prontuarios-recebidos {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.prontuarios-recebidos:hover {
+  box-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
+}

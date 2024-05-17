@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; 
+}
+
+.login-container {
+  width: 360px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  background: rgba(18, 18, 18, 0.8); 
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff; 
+  box-shadow: none; 
+}
+
+.login-container h2 {
+  color: #ffffff; 
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff; 
+  width: 30px; 
+}
+
+.input-group label:hover,
+.input-group label:active,
+.input-group label:focus {
+  color: #4a90e2; 
+}
+
+.input-group input {
+  width: calc(100% - 70px); 
+  padding: 10px;
+  border: 1px solid #4a90e2; 
+  border-radius: 5px;
+  padding-left: 40px; 
+  background-color: #121212; 
+  color: #ffffff; 
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.button {
+  width: 100%; 
+  padding: 15px; 
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4a90e2 0%, #2569bb 100%);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s; 
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #2569bb 0%, #4a90e2 100%); 
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.fa-user, .fa-lock, .fa-sign-in-alt {
+  position: absolute;
+  top: 50%;
+  left: 10px; 
+  transform: translateY(-50%);
+  color: #4a90e2; 
+}
+.small-button {
+  margin-top: 50px; 
+  width: 120px; 
+  padding: 10px; 
+  border: none;
+  border-radius: 5px;
+  background-color: #4a90e2; 
+  color: #fff; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+  margin: 0 auto; 
+  display: block; 
+}
+
+.small-button:hover {
+  background-color: #2569bb; 
+}
